@@ -11,13 +11,13 @@ class BSNode {
 	BSNode<T>* right;
 	
 	BSNode(T elem, BSNode<T>* left=nullptr, BSNode<T>* right=nullptr){
-		this -> elem;
-		this -> left;
-		this -> right;
+		this -> elem = elem;
+		this -> left = left;
+		this -> right = right;
 	}
 
 	friend std::ostream& operator<<(std::ostream &out, const BSNode<T> &bsn){
-		out << bsn.elem; // imprime el elemento almacenado
+		out << "Elemento almacenado: " << bsn.elem;
 		return out;
 	}
 };
