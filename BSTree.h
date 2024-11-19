@@ -42,7 +42,9 @@ private:
             print_inorder(out, n->left);
             out << n->elem << " ";
             print_inorder(out, n->right);
-        }
+        } else {
+		return;
+	}
     }
 
     BSNode<T>* remove(BSNode<T>* n, T e) {
